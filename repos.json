@@ -1,0 +1,11 @@
+{
+  "repositories": [
+    {
+      "name": "ECE415-High-Performance-Computing",
+      "source": "https://github.com/TsiantosD/ECE415-High-Performance-Computing.git",
+      "destination": "https://github.com/ACrispyCookie/ECE415-High-Performance-Computing.git",
+      "default_branch": "main",
+      "lfs": false
+    }
+  ]
+}
