@@ -1,0 +1,27 @@
+name: Sync shared repositories
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Nightly at 03:17 UTC.
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: shared-repo-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout sync config
+        uses: actions/checkout@v4
+
+      - name: Sync configured repositories
+        env:
+          REPO_SYNC_TOKEN: ${{ secrets.REPO_SYNC_TOKEN }}
+        run: python3 scripts/sync_repos.py
