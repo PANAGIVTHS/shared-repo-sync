@@ -6,6 +6,41 @@
       "destination": "https://github.com/ACrispyCookie/ECE415-High-Performance-Computing.git",
       "default_branch": "main",
       "lfs": false
-    }
+    },
+    {
+      "name": "ECE436-Wireless-Communications",
+      "source": "https://github.com/TsiantosD/ECE436-Wireless-Communications.git",
+      "destination": "https://github.com/ACrispyCookie/ECE436-Wireless-Communications.git",
+      "default_branch": "main",
+      "lfs": false
+    },
+    {
+      "name": "ECE494-Microprocessor-Design",
+      "source": "https://github.com/TsiantosD/ECE494-Microprocessor-Design.git",
+      "destination": "https://github.com/ACrispyCookie/ECE494-Microprocessor-Design.git",
+      "default_branch": "main",
+      "lfs": false
+    },
+    {
+      "name": "ECE455-Hardware-Security",
+      "source": "https://github.com/TsiantosD/ECE455-Hardware-Security.git",
+      "destination": "https://github.com/ACrispyCookie/ECE455-Hardware-Security.git",
+      "default_branch": "main",
+      "lfs": false
+    },
+    {
+      "name": "ECE338-Parallel-Computer-Architecture",
+      "source": "https://github.com/PANAGIVTHS/ECE338-Parallel-Computer-Architecture.git",
+      "destination": "https://github.com/ACrispyCookie/ECE338-Parallel-Computer-Architecture.git",
+      "default_branch": "main",
+      "lfs": false
+    },
+    {
+      "name": "ECE433-Computer-Graphics",
+      "source": "https://github.com/PANAGIVTHS/ECE433-Computer-Graphics.git",
+      "destination": "https://github.com/ACrispyCookie/ECE433-Computer-Graphics.git",
+      "default_branch": "main",
+      "lfs": false
+    },
   ]
 }
