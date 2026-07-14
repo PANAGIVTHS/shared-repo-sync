@@ -10,9 +10,23 @@ Private automation repository for keeping selected shared course repositories in
 
 ## Required secret
 
-The workflow expects a repository secret named `REPO_SYNC_TOKEN` with permission to push to the destination repositories.
+The workflow expects a repository secret named `REPO_SYNC_TOKEN`.
 
-For public source repositories, the token only needs write access to the destination repositories. For private source repositories, it also needs read access to the source repositories.
+The token must be able to create any missing destination mirror repositories and then push to them. For personal repositories under `ACrispyCookie`, use a token that can create repositories for the authenticated user. For organization-owned destinations, the token must be allowed to create repositories in that organization.
+
+For public source repositories, the token only needs destination-side create/write access. For private source repositories, it also needs read access to the source repositories. If a mirror includes `.github/workflows/*`, the token also needs workflow permission.
+
+## Destination repository creation
+
+Before each mirror sync, `scripts/sync_repos.py` checks whether the configured `destination` repository exists through the GitHub API. If GitHub returns 404, the script creates the destination repository and then performs the normal `git push --mirror`.
+
+Each entry in `repos.json` may set:
+
+```json
+"private": true
+```
+
+If omitted, newly created destination repositories default to public (`false`).
 
 ## Installing the workflow
 
