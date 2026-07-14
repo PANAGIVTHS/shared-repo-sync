@@ -41,6 +41,14 @@
       "destination": "https://github.com/ACrispyCookie/ECE433-Computer-Graphics.git",
       "default_branch": "main",
       "lfs": false
+    },
+    {
+      "name": "ECE311-Databases",
+      "source": "https://github.com/TsiantosD/ECE311-Databases.git",
+      "destination": "https://github.com/ACrispyCookie/ECE311-Databases.git",
+      "default_branch": "main",
+      "lfs": false,
+      "private": false
     }
   ]
 }
