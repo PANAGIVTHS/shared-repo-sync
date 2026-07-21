@@ -134,7 +134,6 @@ def sync_repo(repo: dict[str, object], token: str) -> None:
             "git for-each-ref --format='delete %(refname)' refs/pull/ | git update-ref --stdin"],
             cwd=bare,
         )
-        run(["git", "show-ref"], cwd=bare)
         run(["git", "push", "--mirror"], cwd=bare)
         if use_lfs:
             run(["git", "lfs", "push", "--all", with_token(destination, token)], cwd=bare)

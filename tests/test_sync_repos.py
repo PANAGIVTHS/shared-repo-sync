@@ -89,5 +89,32 @@ class EnsureDestinationRepositoryTests(unittest.TestCase):
         self.assertEqual(json.loads(calls[2][2]), {"name": "new-repo", "private": True})
 
 
+class SyncRepoTests(unittest.TestCase):
+    def test_pull_refs_are_deleted_before_mirror_push(self):
+        repo = {
+            "name": "example",
+            "source": "https://github.com/source/example.git",
+            "destination": "https://github.com/dest/example.git",
+        }
+        commands = []
+
+        def fake_run(cmd, cwd=None):
+            commands.append((cmd, cwd))
+
+        with (
+            patch.object(sync_repos, "ensure_destination_repository"),
+            patch.object(sync_repos, "with_token", return_value="https://tokenized"),
+            patch.object(sync_repos, "run", side_effect=fake_run),
+        ):
+            sync_repos.sync_repo(repo, "token")
+
+        command_list = [cmd for cmd, _ in commands]
+        delete_index = command_list.index(
+            ["bash", "-c", "git for-each-ref --format='delete %(refname)' refs/pull/ | git update-ref --stdin"]
+        )
+        push_index = command_list.index(["git", "push", "--mirror"])
+        self.assertLess(delete_index, push_index)
+
+
 if __name__ == "__main__":
     unittest.main()
