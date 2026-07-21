@@ -3,52 +3,58 @@
     {
       "name": "ECE415-High-Performance-Computing",
       "source": "https://github.com/TsiantosD/ECE415-High-Performance-Computing.git",
-      "destination": "https://github.com/ACrispyCookie/ECE415-High-Performance-Computing.git",
-      "default_branch": "main",
-      "lfs": false
-    },
-    {
-      "name": "ECE436-Wireless-Communications",
-      "source": "https://github.com/TsiantosD/ECE436-Wireless-Communications.git",
-      "destination": "https://github.com/ACrispyCookie/ECE436-Wireless-Communications.git",
+      "destination": "https://github.com/PANAGIVTHS/ECE415-High-Performance-Computing.git",
       "default_branch": "main",
       "lfs": false
     },
     {
       "name": "ECE494-Microprocessor-Design",
       "source": "https://github.com/TsiantosD/ECE494-Microprocessor-Design.git",
-      "destination": "https://github.com/ACrispyCookie/ECE494-Microprocessor-Design.git",
+      "destination": "https://github.com/PANAGIVTHS/ECE494-Microprocessor-Design.git",
       "default_branch": "main",
       "lfs": false
     },
     {
       "name": "ECE455-Hardware-Security",
       "source": "https://github.com/TsiantosD/ECE455-Hardware-Security.git",
-      "destination": "https://github.com/ACrispyCookie/ECE455-Hardware-Security.git",
+      "destination": "https://github.com/PANAGIVTHS/ECE455-Hardware-Security.git",
       "default_branch": "main",
       "lfs": false
     },
     {
-      "name": "ECE338-Parallel-Computer-Architecture",
-      "source": "https://github.com/PANAGIVTHS/ECE338-Parallel-Computer-Architecture.git",
-      "destination": "https://github.com/ACrispyCookie/GPGPU.git",
+      "name": "ECE340-Embedded-Systems",
+      "source": "https://github.com/ACrispyCookie/ECE340-Embedded-Systems",
+      "destination": "https://github.com/PANAGIVTHS/ECE340-Embedded-Systems",
       "default_branch": "main",
       "lfs": false
     },
     {
-      "name": "ECE433-Computer-Graphics",
-      "source": "https://github.com/PANAGIVTHS/ECE433-Computer-Graphics.git",
-      "destination": "https://github.com/ACrispyCookie/ECE433-Computer-Graphics.git",
+      "name": "ECE321-Concurrent-Programming",
+      "source": "https://github.com/ACrispyCookie/ECE321-Concurrent-Programming",
+      "destination": "https://github.com/PANAGIVTHS/ECE321-Concurrent-Programming",
       "default_branch": "main",
       "lfs": false
     },
     {
-      "name": "ECE311-Databases",
-      "source": "https://github.com/TsiantosD/ECE311-Databases.git",
-      "destination": "https://github.com/ACrispyCookie/ECE311-Databases.git",
+      "name": "ECE318-Operating-Systems",
+      "source": "https://github.com/ACrispyCookie/ECE318-Operating-Systems",
+      "destination": "https://github.com/PANAGIVTHS/ECE318-Operating-Systems",
       "default_branch": "main",
-      "lfs": false,
-      "private": false
+      "lfs": false
+    },
+    {
+      "name": "ECE219-Computer-Organization",
+      "source": "https://github.com/ACrispyCookie/ECE219-Computer-Organization",
+      "destination": "https://github.com/PANAGIVTHS/ECE219-Computer-Organization",
+      "default_branch": "main",
+      "lfs": false
+    },
+    {
+      "name": "ECE216-Algorithms",
+      "source": "https://github.com/ACrispyCookie/ECE216-Algorithms",
+      "destination": "https://github.com/PANAGIVTHS/ECE216-Algorithms",
+      "default_branch": "main",
+      "lfs": false
     }
   ]
 }
