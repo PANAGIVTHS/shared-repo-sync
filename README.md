@@ -1,6 +1,6 @@
 # shared-repo-sync
 
-Private automation repository for keeping selected shared course repositories in sync under `ACrispyCookie`.
+Automation repository for keeping selected shared course repositories in sync under `ACrispyCookie`.
 
 ## How it works
 
