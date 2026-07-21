@@ -31,7 +31,7 @@
     {
       "name": "ECE338-Parallel-Computer-Architecture",
       "source": "https://github.com/PANAGIVTHS/ECE338-Parallel-Computer-Architecture.git",
-      "destination": "https://github.com/ACrispyCookie/ECE338-Parallel-Computer-Architecture.git",
+      "destination": "https://github.com/ACrispyCookie/GPGPU.git",
       "default_branch": "main",
       "lfs": false
     },
